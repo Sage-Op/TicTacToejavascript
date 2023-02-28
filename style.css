@@ -1,0 +1,83 @@
+body{
+  background-color: #373a3c;
+}
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+  }
+  
+  .square {
+    width: 200px;
+    height: 200px;
+    font-size: 60px;
+    text-align: center;
+    line-height: 100px;
+    border: 5px solid #F7D07C;
+    box-sizing: border-box;
+    color: antiquewhite;
+    display: grid;
+    place-items: center;
+  }
+  #restartButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #222426;
+    color:  #F7D07C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }  
+  #game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  #alertBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #222426;
+    color: #F7D07C;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+    width: 300px;
+    height: 100px;
+    animation: fade-in 0.1s ease-in;
+  }
+  
+  #alertText {
+    margin-bottom: 20px;
+  }
+  
+  #alertButton {
+    background-color: #F7D07C;
+    color: #222426;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: sans-serif;
+    cursor: pointer;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
